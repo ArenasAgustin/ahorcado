@@ -1,9 +1,11 @@
-import Dibujo from "./Dibujo/Dibujo";
+import Dibujo from "./Components/Dibujo/Dibujo";
+import Landing from "./Components/Landing/Landing";
 
 function App() {
   return (
     <div className="App">
-      <Dibujo />
+      <Landing />
+      <Home />
     </div>
   );
 }
