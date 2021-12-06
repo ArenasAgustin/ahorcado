@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { IoRemove } from "react-icons/io5";
-import './Palabra.scss';
+import './Word.scss';
 
-export default function Palabra({ palabra }) {
-    const [letraArray, setLetraArray] = useState([...palabra].map(() => false));
+export default function Palabra({ word }) {
+    const [letraArray, setLetraArray] = useState([...word].map(() => false));
 
     const handleClick = (index) => {
         let newLetraArray = [...letraArray];
@@ -14,7 +14,7 @@ export default function Palabra({ palabra }) {
     return (
         <div className="contenedor-palabra">
             {
-                [...palabra].map((letra, i) => (
+                [...word].map((letra, i) => (
                     <span key={i} className="letra" onClick={() => handleClick(i)}>
                         {letraArray[i] ? letra : <IoRemove />}
                     </span>
