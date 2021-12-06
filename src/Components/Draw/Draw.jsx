@@ -1,4 +1,4 @@
-import './Dibujo.scss';
+import './Draw.scss';
 
 export default function Dibujo() {
     return (
