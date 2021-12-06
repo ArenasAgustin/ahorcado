@@ -1,4 +1,4 @@
-export const diccionario = {
+const diccionario = {
   // ---------------------------------------------------------     0 - 4
   facil: [
     "HTML",
@@ -80,3 +80,5 @@ export const diccionario = {
     "",
   ],
 };
+
+export default diccionario
