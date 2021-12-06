@@ -1,12 +1,15 @@
-import Dibujo from "./components/Dibujo/Dibujo";
-import Palabra from "./components/Palabra/Palabra";
+import Landing from "./Components/Landing/Landing";
+import Home from "./Components/Home/Home.jsx"
+import { Route, Routes } from "react-router-dom"
+
 
 function App() {
   return (
     <div className="App">
-      <Dibujo />
-
-      <Palabra palabra="holaaaaaa" />
+    <Routes>
+      <Route exact path = "/" element={<Landing />} />
+      <Route exact path = "/home" element={<Home/>} /> 
+    </Routes>
     </div>
   );
 }
